@@ -244,14 +244,4 @@ Rogue space anywhere, example: in front of env variable: MY_ENV='foo'
 Testing
 Since react-native-config contains native code, it cannot be run in a node.js environment (Jest, Mocha). react-native-config-node provides a way to mock react-native-config for use in test runners - exactly as it is used in the actual app.
 
-On Windows, the Example app supports running automatic tests by using WinAppDriver. In the Example app folder run:
 
-yarn appium
-yarn test:windows
-Jest
-For mocking the Config.FOO_BAR usage, create a mock at __mocks__/react-native-config.js:
-
-// __mocks__/react-native-config.js
-export default {
-  FOO_BAR: 'baz',
-};
